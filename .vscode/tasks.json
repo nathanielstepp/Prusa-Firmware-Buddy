@@ -6,7 +6,7 @@
         {
             "label": "Bootstrap",
             "type": "shell",
-            "command": "python3 ${workspaceFolder}/utils/bootstrap.py",
+            "command": "python ${workspaceFolder}/utils/bootstrap.py",
             "windows": {
                 "command": "python ${workspaceFolder}\\utils\\bootstrap.py"
             }
