@@ -1091,6 +1091,10 @@
 // #define MESH_MIN_Y 0
 // #define MESH_MAX_X X_BED_SIZE
 // #define MESH_MAX_Y Y_BED_SIZE
+// #define MESH_MIN_X (11) // NSTEPP || 2024/03/08
+// #define MESH_MIN_Y (-2) // NSTEPP || 2024/03/08
+// #define MESH_MAX_X X_BED_SIZE // NSTEPP || 2024/03/08
+// #define MESH_MAX_Y Y_BED_SIZE // NSTEPP || 2024/03/08
 #endif
 
 /**
@@ -1397,11 +1401,13 @@
         //   For direct drive, the full length of the nozzle.
         //   Set to 0 for manual unloading.
     #define FILAMENT_CHANGE_SLOW_LOAD_FEEDRATE 5.4 // (mm/s) Slow move when starting load.
-    #define FILAMENT_CHANGE_SLOW_LOAD_LENGTH 30 // (mm) Slow length, to allow time to insert material. //60
+    //#define FILAMENT_CHANGE_SLOW_LOAD_LENGTH 30 // (mm) Slow length, to allow time to insert material. //60
+    #define FILAMENT_CHANGE_SLOW_LOAD_LENGTH 20 // NSTEPP || 2024/03/08
         // 0 to disable start loading and skip to fast load only
     #define FILAMENT_CHANGE_FAST_LOAD_FEEDRATE 18 // (mm/s) Load filament feedrate. This can be pretty fast. //40
     #define FILAMENT_CHANGE_FAST_LOAD_ACCEL 100 // (mm/s^2) Lower acceleration may allow a faster feedrate.  //200
-    #define FILAMENT_CHANGE_FAST_LOAD_LENGTH 50 // (mm) Load length of filament, from extruder gear to nozzle. //75
+    //#define FILAMENT_CHANGE_FAST_LOAD_LENGTH 50 // (mm) Load length of filament, from extruder gear to nozzle. //75
+    #define FILAMENT_CHANGE_FAST_LOAD_LENGTH 20 // NSTEPP || 2024/03/08
         //   For Bowden, the full length of the tube and nozzle.
         //   For direct drive, the full length of the nozzle.
     //#define ADVANCED_PAUSE_CONTINUOUS_PURGE       // Purge continuously up to the purge length until interrupted.
