@@ -181,7 +181,8 @@ LoopResult CSelftestPart_Fan::state_measure_rpm_100_percent() {
     }
 
 #if PRINTER_IS_PRUSA_MK3_5
-    if (heatbreak_fan_rpm > 6000 || print_fan_rpm > 6000) {
+    // if (heatbreak_fan_rpm > 6000 || print_fan_rpm > 6000) {
+    if (heatbreak_fan_rpm > 10950 || print_fan_rpm > 6550) { // NSTEPP || 2024/04/25
         // this rpm is unreachable by noctua therefore the fans are a lot faster and pwm fix is needed to make printer quiet
         // check both fans because they could be switched.
         config_store().has_alt_fans.set(true);
