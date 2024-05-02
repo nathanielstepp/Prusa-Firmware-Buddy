@@ -1107,10 +1107,14 @@
 // #define MESH_MIN_Y (-10.5f)
 // #define MESH_MAX_X (X_BED_SIZE + MESH_MIN_X)
 // #define MESH_MAX_Y (Y_BED_SIZE - MESH_MIN_Y)
-#define MESH_MIN_X ( 10.00f) // NSTEPP || 2024/04/25
-#define MESH_MIN_Y ( -2.75f) // NSTEPP || 2024/04/25
-#define MESH_MAX_X (257.00f) // NSTEPP || 2024/04/25
-#define MESH_MAX_Y (222.00f) // NSTEPP || 2024/04/25
+// #define MESH_MIN_X ( 10.00f) // NSTEPP || 2024/04/25
+// #define MESH_MIN_Y ( -2.75f) // NSTEPP || 2024/04/25
+// #define MESH_MAX_X (257.00f) // NSTEPP || 2024/04/25
+// #define MESH_MAX_Y (222.00f) // NSTEPP || 2024/04/25
+#define MESH_MIN_X (  9.5000f) // NSTEPP || 2024/05/01
+#define MESH_MIN_Y ( -3.2778f) // NSTEPP || 2024/05/01
+#define MESH_MAX_X (259.5000f) // NSTEPP || 2024/05/01
+#define MESH_MAX_Y (222.2778f) // NSTEPP || 2024/05/01
 #endif
 
 /**
