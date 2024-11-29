@@ -1,3 +1,21 @@
+# Customized Fork of Prusa-Firmware-Buddy Repository by Prusa Research
+
+This custom firmware includes the necessary modifications to support a customized Prusa MK3.5 hardware configuration. Key details of the configuration are as follows:
+
+- **Extruder and Hotend Configuration**:
+  - **Bondtech LGX Shortcut (SC) Extruder Toolhead** (Prusa MK3/S/+ Kit): [Bondtech LGX Shortcut](https://www.bondtech.se/product/bondtech-lgx-shortcut-mosquito-for-prusa-mk3s/)
+  - **Slice Engineering Mosquito Hotend**: [Mosquito Hotend](https://www.sliceengineering.com/collections/hotends-upgrades/products/the-mosquito-hotend)
+  - **PT1000 RTD Temperature Sensor** (procured from Slice Engineering): [PT1000 RTD Sensor](https://www.sliceengineering.com/products/rtd-pt1000?variant=42832499572977)
+  - **Industrial 24VDC 50W Heater Cartridge** (procured from Slice Engineering): [50W Heater Cartridge](https://www.sliceengineering.com/products/50w-heater-cartridge-bare-leads?variant=35487966101666)
+
+- **Cooling Performance Enhancements**:
+  Changes to the default Prusa firmware were made to optimize self-test calibration parameters, enabling support for improved cooling components:
+  - **Part Cooling Fan**: [CBM-5015BF-055-391-20](https://www.digikey.com/en/products/detail/cui-devices/CBM-5015BF-055-391-20/19524615)
+  - **Hotend Cooling Fan**: [CFM-4020BF-095-342-20](https://www.digikey.com/en/products/detail/cui-devices/CFM-4020BF-095-342-20/15765108)
+
+---
+### _Original Prusa-Firmware-Buddy Repository by Prusa Research README.md text:_
+---
 # Buddy
 This repository includes source code and firmware releases for the Original Prusa 3D printers based on the 32-bit ARM microcontrollers.
 
